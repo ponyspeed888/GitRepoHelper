@@ -40,7 +40,6 @@ set fday=00%Day%
 set today=%Year%-%fmonth:~-2%-%fday:~-2%
 echo %today%
 
-git checkout master
 git merge -m "Daily%today%"   daily/%today% --squash
 git commit  -m "Daily%today%" 
 
